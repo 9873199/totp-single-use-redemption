@@ -1,3 +1,19 @@
+Unreleased
+==========
+
+- Add single-use, replay-protected TOTP verification via
+  ``pyotp.consume_totp`` and the ``pyotp.TOTPConsumptionStore`` storage
+  protocol. The store, supplied by the application and keyed by account
+  identifier and key generation, is only contacted after cryptographic
+  matching and must atomically confirm the generation and advance the last
+  consumed timecode. Distinct exceptions/error codes cover invalid OTPs,
+  replays, stale key generations and storage failures; a storage failure can
+  never be reported as success. No in-process locks are used.
+
+- Add ``pyotp.contrib.SQLiteTOTPStore``, a dependency-free SQLite reference
+  adapter demonstrating the transaction boundary. The table stores only
+  consumption state, never plaintext secrets.
+
 Changes for v2.10.0 (2026-06-13)
 ================================
 

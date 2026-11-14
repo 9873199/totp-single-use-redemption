@@ -7,6 +7,14 @@ from . import contrib  # noqa:F401
 from .compat import random
 from .hotp import HOTP as HOTP
 from .otp import OTP as OTP
+from .replay import InvalidOTPError as InvalidOTPError
+from .replay import ReplayedOTPError as ReplayedOTPError
+from .replay import StaleKeyGenerationError as StaleKeyGenerationError
+from .replay import TOTPConsumeError as TOTPConsumeError
+from .replay import TOTPConsumptionStore as TOTPConsumptionStore
+from .replay import TOTPError as TOTPError
+from .replay import TOTPStorageError as TOTPStorageError
+from .replay import consume_totp as consume_totp
 from .totp import TOTP as TOTP
 
 

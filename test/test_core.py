@@ -9,7 +9,7 @@ import unittest
 from urllib.parse import parse_qsl, urlparse
 from warnings import warn
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 import pyotp  # noqa
 
 

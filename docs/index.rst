@@ -9,6 +9,9 @@ API documentation
 .. automodule:: pyotp.totp
    :members:
 
+.. automodule:: pyotp.replay
+   :members:
+
 .. automodule:: pyotp.hotp
    :members:
 
@@ -16,6 +19,9 @@ API documentation
    :members:
 
 .. automodule:: pyotp.contrib.steam
+   :members:
+
+.. automodule:: pyotp.contrib.sqlite_store
    :members:
 
 Change log

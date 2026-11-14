@@ -70,6 +70,54 @@ Time-based OTPs
     time.sleep(30)
     totp.verify('492039') # => False
 
+Single-use (replay-protected) TOTP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``verify`` only proves that a code is cryptographically correct. If the same code is submitted to two login
+services at the same time, both see a valid code and both can accept it. To make each TOTP consumable exactly once,
+use ``pyotp.consume_totp`` together with a storage backend implementing the ``pyotp.TOTPConsumptionStore`` protocol.
+
+The library keeps no account dictionary and takes no Python locks (a lock cannot coordinate separate processes or
+machines). The application provides the store, keyed by an account identifier and a key generation (bump the
+generation whenever the secret is rotated). The store is contacted only *after* the code matches cryptographically,
+and must atomically confirm that the generation is still valid and that the matching timecode is strictly greater
+than the last consumed one. A concrete outcome distinguishes the four failure modes:
+
+.. code:: python
+
+    import sqlite3
+    import pyotp
+    from pyotp.contrib import SQLiteTOTPStore
+
+    conn = sqlite3.connect("totp_consumption.db")
+    store = SQLiteTOTPStore(conn)  # table stores consumption state, never the secret
+
+    totp = pyotp.TOTP("base32secret3232")
+    try:
+        timecode = pyotp.consume_totp(
+            totp,
+            otp="492039",
+            account_id="alice@example.com",
+            key_generation=0,
+            store=store,
+        )
+        # Authentication succeeded; timecode is the counter that was consumed.
+    except pyotp.InvalidOTPError:
+        pass  # wrong code; the store was never contacted
+    except pyotp.ReplayedOTPError:
+        pass  # an equal or later timecode was already consumed
+    except pyotp.StaleKeyGenerationError:
+        pass  # this secret generation has been rotated out
+    except pyotp.TOTPStorageError:
+        pass  # storage failure: never treat this as a successful login
+
+The reference ``SQLiteTOTPStore`` (``pyotp.contrib.SQLiteTOTPStore``) runs the generation check, replay check and
+counter update in a single database transaction (``BEGIN IMMEDIATE`` ... conditional ``UPDATE`` ... ``COMMIT``), so
+two verifiers on independent connections can consume the same code at most once. When two counters inside the
+validity window happen to produce the same short code, the highest matching timecode is selected and consumed in a
+single operation. Store implementations only need to persist ``(account_id, key_generation, last_timecode)`` -
+plaintext secrets are never required.
+
 Counter-based OTPs
 ~~~~~~~~~~~~~~~~~~
 .. code:: python
