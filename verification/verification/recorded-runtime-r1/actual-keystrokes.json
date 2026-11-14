@@ -1,0 +1,236 @@
+{
+  "source_is_human": false,
+  "events": [
+    {
+      "command_id": "runtime",
+      "event": 0,
+      "key": "p",
+      "requested_delay_seconds": 0.4464802412667184,
+      "actual_at_seconds": 0.448736,
+      "buffer": "p",
+      "kind": "word_boundary",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 1,
+      "key": "y",
+      "requested_delay_seconds": 0.4899411441121666,
+      "actual_at_seconds": 0.942671,
+      "buffer": "py",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 2,
+      "key": "t",
+      "requested_delay_seconds": 0.2317087608502333,
+      "actual_at_seconds": 1.174949,
+      "buffer": "pyt",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 3,
+      "key": "h",
+      "requested_delay_seconds": 0.3896376240112371,
+      "actual_at_seconds": 1.565041,
+      "buffer": "pyth",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 4,
+      "key": "o",
+      "requested_delay_seconds": 0.2460331879711138,
+      "actual_at_seconds": 1.811784,
+      "buffer": "pytho",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 5,
+      "key": "n",
+      "requested_delay_seconds": 0.16564893410593837,
+      "actual_at_seconds": 1.977906,
+      "buffer": "python",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 0
+    },
+    {
+      "command_id": "runtime",
+      "event": 6,
+      "key": " ",
+      "requested_delay_seconds": 0,
+      "actual_at_seconds": 1.978098,
+      "buffer": "python ",
+      "kind": "separator",
+      "phase": "separator",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 7,
+      "key": "-",
+      "requested_delay_seconds": 0.5948836364565097,
+      "actual_at_seconds": 2.57353,
+      "buffer": "python -",
+      "kind": "special",
+      "phase": "initial",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 8,
+      "key": "s",
+      "requested_delay_seconds": 0.4482786890118103,
+      "actual_at_seconds": 3.022437,
+      "buffer": "python -s",
+      "kind": "word_boundary",
+      "phase": "initial",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 9,
+      "key": "BACKSPACE",
+      "requested_delay_seconds": 0.4125455652662413,
+      "actual_at_seconds": 3.435689,
+      "buffer": "python -",
+      "kind": "word_boundary",
+      "phase": "repair_erase",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 10,
+      "key": "BACKSPACE",
+      "requested_delay_seconds": 0.3107479748241826,
+      "actual_at_seconds": 3.747057,
+      "buffer": "python ",
+      "kind": "erase",
+      "phase": "repair_erase",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 11,
+      "key": "-",
+      "requested_delay_seconds": 0.4388668530455088,
+      "actual_at_seconds": 4.186217,
+      "buffer": "python -",
+      "kind": "special",
+      "phase": "repair_retype",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 12,
+      "key": "B",
+      "requested_delay_seconds": 0.6149635741298364,
+      "actual_at_seconds": 4.801524,
+      "buffer": "python -B",
+      "kind": "word_boundary",
+      "phase": "repair_retype",
+      "word_index": 1
+    },
+    {
+      "command_id": "runtime",
+      "event": 13,
+      "key": " ",
+      "requested_delay_seconds": 0,
+      "actual_at_seconds": 4.80166,
+      "buffer": "python -B ",
+      "kind": "separator",
+      "phase": "separator",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 14,
+      "key": "d",
+      "requested_delay_seconds": 0.45457900398471196,
+      "actual_at_seconds": 5.256588,
+      "buffer": "python -B d",
+      "kind": "word_boundary",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 15,
+      "key": "e",
+      "requested_delay_seconds": 0.2963982130948913,
+      "actual_at_seconds": 5.553498,
+      "buffer": "python -B de",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 16,
+      "key": "m",
+      "requested_delay_seconds": 0.3233246207618903,
+      "actual_at_seconds": 5.877468,
+      "buffer": "python -B dem",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 17,
+      "key": "o",
+      "requested_delay_seconds": 0.3687881216216902,
+      "actual_at_seconds": 6.246816,
+      "buffer": "python -B demo",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 18,
+      "key": ".",
+      "requested_delay_seconds": 0.679279301945698,
+      "actual_at_seconds": 6.926801,
+      "buffer": "python -B demo.",
+      "kind": "special",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 19,
+      "key": "p",
+      "requested_delay_seconds": 0.5755255174186282,
+      "actual_at_seconds": 7.502823,
+      "buffer": "python -B demo.p",
+      "kind": "word_boundary",
+      "phase": "initial",
+      "word_index": 2
+    },
+    {
+      "command_id": "runtime",
+      "event": 20,
+      "key": "y",
+      "requested_delay_seconds": 0.42740068428892564,
+      "actual_at_seconds": 7.951824,
+      "buffer": "python -B demo.py",
+      "kind": "letter",
+      "phase": "initial",
+      "word_index": 2
+    }
+  ]
+}

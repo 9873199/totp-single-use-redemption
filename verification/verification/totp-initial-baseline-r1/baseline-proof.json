@@ -1,0 +1,40 @@
+{
+  "time": "2026-11-14T21:39:05+08:00",
+  "uid": 1387,
+  "initial_sha": "cc156832fa9f3d5af7fb9e4e6b86b29dfc5b69f1",
+  "source": "git archive of exact initial commit",
+  "upstream_core": {
+    "passed": 27,
+    "failed": 1,
+    "preexisting_failure": "Windows datetime.fromtimestamp(-1) OSError"
+  },
+  "old_implementation_comparison": [
+    {
+      "path": "src/pyotp/totp.py",
+      "initial_sha256": "11b86e365346fee8441b5667b30cdc16709a262cb75635af51981f3416783d31",
+      "frozen_sha256": "75d1e6901d4a1e856dd0df30b89404d879c9e3af681f6e20e2cf205ed8bb5e39",
+      "difference": "CRLF to LF only",
+      "normalized_source_identical": true
+    },
+    {
+      "path": "src/pyotp/utils.py",
+      "initial_sha256": "af16bf4101360253014ed541e5c556e442de7b20c06f10d31368a702cb4ec487",
+      "frozen_sha256": "23d6ff62ce432de97a3605e21c6abf4c4ff4499d3589df23f824c0c67894d50b",
+      "difference": "CRLF to LF only",
+      "normalized_source_identical": true
+    },
+    {
+      "path": "src/pyotp/otp.py",
+      "initial_sha256": "84f80054bcfe19f9598064814dc4962ca359f45d74538ee06ac70c62476445ff",
+      "frozen_sha256": "4b975adc35a7a9e1fa63be21307ed38b6ad24167b1a86cee9ee75e6fd6af917a",
+      "difference": "CRLF to LF only",
+      "normalized_source_identical": true
+    }
+  ],
+  "product_scoring": "Pre-existing platform failure excluded; new generation behavior evaluated separately.",
+  "helper_postprocess_issues": [
+    "Original test completed with raw output retained, then str membership on bytes TypeError.",
+    "Subsequent exact byte equality check caught model CRLF-to-LF normalization; no behavior changes. Both byte SHA values retained; normalized content equality confirmed."
+  ],
+  "no_tests_rerun_for_postprocessing": true
+}

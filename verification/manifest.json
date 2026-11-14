@@ -1,0 +1,268 @@
+{
+  "created": "2026-11-14T21:43:50+08:00",
+  "reviewed": true,
+  "reviewer": "Codex primary AI-assisted atomic-store reviewer",
+  "uid": 1387,
+  "frozen_commit": "95d9f199c324a30dadaf53741c1a12239b4e8b07",
+  "native_trajectory_sha256": "14d12d2fa08fd8c7d793f15e0427de80c060beef70e3974a1ef081974d9b09f8",
+  "files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\freeze.json",
+      "path": "freeze.json",
+      "sha256": "06d5b01765f5da8e822bbe6def61c402e953d1615fe4866e9f9eff3958ef328b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\freeze-audit.json",
+      "path": "freeze-audit.json",
+      "sha256": "3e1378f9cd0259b7c3c391887489edd75c771809f2b5b62f02bf05cee1e5435f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\environment-reviewed.json",
+      "path": "environment-reviewed.json",
+      "sha256": "c6637ba467935714519a51d3d94eaf09da9e0776132c41daff3a3bdd4597a412"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\evidence-map.json",
+      "path": "evidence-map.json",
+      "sha256": "0de625343d08dd17c90f043c37346f2e8c684a35725adf20e5788622793db632"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\model-final-answer.txt",
+      "path": "model-final-answer.txt",
+      "sha256": "5ee7592c3cbef07e03e2e4ddaa5fe2faaf79d788102db9717cd6d0414f361490"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\test-results.json",
+      "path": "test-results.json",
+      "sha256": "74742a81a1e9ecf9d64d40de24e795a3ce006b5e8e77976483bed4ddb3157bd5"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\evaluation-qc.json",
+      "path": "evaluation-qc.json",
+      "sha256": "834d4f5b6eb3083a47aeb591cfbaea0476f113d4783c8dd976946595abfb6fcd"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\actual-commands.json",
+      "path": "verification/recorded-runtime-r1/actual-commands.json",
+      "sha256": "ba3ccc3e23c83755e4ebb8843275c1528382e71b4e639b9844d7d2864cc2fb0a"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\actual-keystrokes.json",
+      "path": "verification/recorded-runtime-r1/actual-keystrokes.json",
+      "sha256": "f25d4aed748ce4be004e302a8c1106e8246e475a1342feadede204763c165eff"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\recording-status.json",
+      "path": "verification/recorded-runtime-r1/recording-status.json",
+      "sha256": "2cb733ef34a157db4a67c50bc362a8c9af66c118bdd5cedc60f355a8d36d996f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\runtime-output.log",
+      "path": "verification/recorded-runtime-r1/runtime-output.log",
+      "sha256": "3c34713b23e4f75b2fbcdae4e9676dd3d1df45f06843536893b655b724b949b4"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\spec.json",
+      "path": "verification/recorded-runtime-r1/spec.json",
+      "sha256": "6ab4efb03d3fbb2f5a185d55c791393a42a6d08a45e18d69fe7c8154f0be79a0"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\recorded-runtime-r1\\typing-check.json",
+      "path": "verification/recorded-runtime-r1/typing-check.json",
+      "sha256": "012f3560a006380ceb242f306ab5542e4544964fc6006fa4e6ac7896c2390a57"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\actual-import.json",
+      "path": "verification/totp-consumption-r1/actual-import.json",
+      "sha256": "83ed83c6bd129ae214ccfeba1f552a1654c721c8f434cb4fe07167d164844072"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\actual-import.stderr.log",
+      "path": "verification/totp-consumption-r1/actual-import.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\actual-import.stdout.log",
+      "path": "verification/totp-consumption-r1/actual-import.stdout.log",
+      "sha256": "82a522738cdd00dad0c3ea9026f0e739054768d594df815f13eeaf3da840c865"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\demo.py",
+      "path": "verification/totp-consumption-r1/demo.py",
+      "sha256": "2fc68364f7bdab3210f6a670539edb1b99e8d520c589f536b29714692fc165a0"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\dependency-lock.json",
+      "path": "verification/totp-consumption-r1/dependency-lock.json",
+      "sha256": "d0c8ce88b3290b1d91e49b6837820bf38ced485271f6677403935076cd3b4b0b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\dependency-lock.stderr.log",
+      "path": "verification/totp-consumption-r1/dependency-lock.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\dependency-lock.stdout.log",
+      "path": "verification/totp-consumption-r1/dependency-lock.stdout.log",
+      "sha256": "10cff3dc0b38f22f295a46aeba1a7ef184a6182ce2a7345693998f3727dd2683"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\independent-totp-consumption.json",
+      "path": "verification/totp-consumption-r1/independent-totp-consumption.json",
+      "sha256": "375e13cfd3cc563146b585fad9d885781285635fd21d6fc2f83738a39066e9b1"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\independent-totp-consumption.stderr.log",
+      "path": "verification/totp-consumption-r1/independent-totp-consumption.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\independent-totp-consumption.stdout.log",
+      "path": "verification/totp-consumption-r1/independent-totp-consumption.stdout.log",
+      "sha256": "ffeee348e20ce27314dd68524f84bb076a5e40c1b3aa68d6a7d78c6277a13b55"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\model-replay-tests.json",
+      "path": "verification/totp-consumption-r1/model-replay-tests.json",
+      "sha256": "ef108d425287dec2f7528ef7d4906a86f4bccc179c513aacc45d274f4b8bb9a5"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\model-replay-tests.stderr.log",
+      "path": "verification/totp-consumption-r1/model-replay-tests.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\model-replay-tests.stdout.log",
+      "path": "verification/totp-consumption-r1/model-replay-tests.stdout.log",
+      "sha256": "488375c03329eb278c20fbf26819df67fe2421a14eaa8bb9960cfa3186cec0af"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\replay-proof.json",
+      "path": "verification/totp-consumption-r1/replay-proof.json",
+      "sha256": "a6d1dd2111b178d473fc1c30239f030a966df4500545d838d35a09c879ccc305"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\reproduction-notes.md",
+      "path": "verification/totp-consumption-r1/reproduction-notes.md",
+      "sha256": "b3f2e108895ac18e26e33b387269a3000f5a5d61b801b778d56ea2e3c5f7e5a3"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\reviewed-spec.json",
+      "path": "verification/totp-consumption-r1/reviewed-spec.json",
+      "sha256": "e8e430a4716e2a55cf9d0e4b78d44069e43fd717feaeb9efb12922e5180eb38b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\test_totp_consumption_review.py",
+      "path": "verification/totp-consumption-r1/test_totp_consumption_review.py",
+      "sha256": "d67d7742e1f79a9513e2e9c4b877dd03693e07764dfd67a3545d63c3f998836f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\totp_oracle.py",
+      "path": "verification/totp-consumption-r1/totp_oracle.py",
+      "sha256": "4121b5d15661957f87b049745d109bacac898f9ec3e05d5799df5b6138cdfb2c"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\upstream-core-regression.json",
+      "path": "verification/totp-consumption-r1/upstream-core-regression.json",
+      "sha256": "ce4e5287271659f41ad5570873151daf4680287dcff782e100aeb33e3f238dd7"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\upstream-core-regression.stderr.log",
+      "path": "verification/totp-consumption-r1/upstream-core-regression.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\upstream-core-regression.stdout.log",
+      "path": "verification/totp-consumption-r1/upstream-core-regression.stdout.log",
+      "sha256": "60511ef4a8a7467726cd44688f00dec90601521ca3a17d3f85f2698676858f6b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\baseline-proof.json",
+      "path": "verification/totp-initial-baseline-r1/baseline-proof.json",
+      "sha256": "dca140b0b73e23791801440bde5754ee56320d060b8ed590ae3b6a83c6ef1e86"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-upstream-core.json",
+      "path": "verification/totp-initial-baseline-r1/initial-upstream-core.json",
+      "sha256": "8ea532419ca78ca8347043442e6493a3794dc9ed9e9b6aa44fa484e624644927"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-upstream-core.stderr.log",
+      "path": "verification/totp-initial-baseline-r1/initial-upstream-core.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-upstream-core.stdout.log",
+      "path": "verification/totp-initial-baseline-r1/initial-upstream-core.stdout.log",
+      "sha256": "120cab9d6ccd940450d14a366352a561ff28e8e7b2fa615a0c93092b8bfea679"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\SECURITY.md",
+      "path": "verification/totp-initial-baseline-r1/initial-source/SECURITY.md",
+      "sha256": "d4a8889a8aedd2c1b70dcfe5cdcf113c32f59201adb8ae4f904ad8569a9c09bc"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\test.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/test.py",
+      "sha256": "6762e8559fd47a78db58c53e316b531f41a86f137de33ca7640bbdd872417142"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\pytest-cache\\README.md",
+      "path": "verification/totp-initial-baseline-r1/pytest-cache/README.md",
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\docs\\conf.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/docs/conf.py",
+      "sha256": "873a3a39c5ac3e12114d1fb710ba0508942a31eaa55c671485f8008104aad183"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\compat.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/compat.py",
+      "sha256": "d666ad1aebe0a21042dc72e4c4415618168ebfc3a65f9a9ef0cd93e40e2422c0"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\hotp.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/hotp.py",
+      "sha256": "2c893ae91ac2925cfd87a772f11fc209ae011cc1be8541264fc7caa945c9f744"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\otp.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/otp.py",
+      "sha256": "84f80054bcfe19f9598064814dc4962ca359f45d74538ee06ac70c62476445ff"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\totp.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/totp.py",
+      "sha256": "11b86e365346fee8441b5667b30cdc16709a262cb75635af51981f3416783d31"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\utils.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/utils.py",
+      "sha256": "af16bf4101360253014ed541e5c556e442de7b20c06f10d31368a702cb4ec487"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\__init__.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/__init__.py",
+      "sha256": "d89d9a6aebcbfc5975b3c1c7385fd3332293b85f57863062174071ecc6250f66"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\contrib\\steam.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/contrib/steam.py",
+      "sha256": "1fa350e46f342b40c7ab74f8088b9fc5166821f682b047077514959076842c00"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-initial-baseline-r1\\initial-source\\src\\pyotp\\contrib\\__init__.py",
+      "path": "verification/totp-initial-baseline-r1/initial-source/src/pyotp/contrib/__init__.py",
+      "sha256": "458cfad5f27ea2768965d99e564e21c3095c20b1f8c92cbb07aeab5286f59200"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\pytest-cache\\README.md",
+      "path": "verification/totp-consumption-r1/pytest-cache/README.md",
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    }
+  ],
+  "reproduction_readme": "# Single-use TOTP atomic consumption review\n\nPost-session AI-assisted independent review. Python3.14.3 with stdlib SQLite; exact dependency-lock and frozen imports retained. In totp-consumption-r1 use matching frozen src and verifier directory on PYTHONPATH; python -B -m pytest -q -s test_totp_consumption_review.py =>20 pass2 fail, both same unactivated-higher-generation issue. Independent HMAC oracle creates epoch0 and true short-code collision. Gated commit with2 actual independent SQLite connections proves uncommitted value invisible, concurrent loser never succeeds, committed value replays. Model replay tests40 pass. Existing core27 pass1 Windows before-epoch OSError; exact initial git archive separately reproduces27 pass1 same error, excluded from scoring. Original/final core normalized contents identical, raw byte SHA differ due CRLF-to-LF only; both recorded. No test statistics summed. Store only state not secret; no external database/service/container. Recorded demo runs fresh local DB, exposes real generation auto-replacement and exits1; openly automated75s capture.\n\nNo edits to frozen model source or original trajectory. User review required; no automatic submission.\n",
+  "no_model_source_edits": true,
+  "native_trace_included": false
+}

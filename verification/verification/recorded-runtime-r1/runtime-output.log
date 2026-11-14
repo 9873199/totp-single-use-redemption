@@ -1,0 +1,8 @@
+Offline verification / generated test seed
+First consume counter: 41
+Same-generation replay: rejected
+Active row before: (7, 41)
+No key-activation step performed
+Larger generation consume result: 41
+Active row after: (8, 41)
+Active-generation confirmation: incomplete

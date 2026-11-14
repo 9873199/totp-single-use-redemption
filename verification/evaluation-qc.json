@@ -1,0 +1,16 @@
+{
+  "time": "2026-11-14T21:43:50+08:00",
+  "reviewer": "Codex primary AI-assisted atomic-store reviewer",
+  "status": "PRIMARY_REVIEW_PASSED_AWAITING_USER_REVIEW",
+  "score": 3,
+  "score_basis": "Atomic replay protection,highest matching counter,epoch0,constant-time comparison,error taxonomy and durable transaction behavior work. But central active-generation requirement is replaced with monotonic auto-rotation: any larger presented generation is accepted and becomes active during consume, without existing activation authorization; this is confirmed in SQLite rows and explicitly endorsed by model tests. Main replay path is usable, but generation security boundary needs correction.2 failing cases are same root; preexisting Windows epoch failure excluded.",
+  "checks": {
+    "observable_actions_reviewed": true,
+    "product_requirement_mapping_reviewed": true,
+    "process_and_product_facts_verified": true,
+    "score_feedback_consistency_checked": true,
+    "non_product_errors_excluded": true,
+    "semantic_diversity_checked": true
+  },
+  "official_project_acceptance": "NOT_CLAIMED"
+}

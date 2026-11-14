@@ -1,0 +1,46 @@
+..............active_before 7 presented 8 result 41 state_after (8, 41)
+Factive_before 7 presented 100 result 41 state_after (100, 41)
+F......
+================================== FAILURES ===================================
+______ test_not_activated_generation_cannot_replace_active_generation[8] ______
+
+tmp_path = WindowsPath('D:/hc/userFeedback/cache/tmp/pytest-of-Administrator/pytest-79/test_not_activated_generation_0')
+presented = 8
+
+    @pytest.mark.parametrize('presented',[8,100])
+    def test_not_activated_generation_cannot_replace_active_generation(tmp_path,presented):
+     c,s=make_store(tmp_path/'state.db');seed(c)
+     try:
+      observed=None
+      try:observed=consume(s,generation=presented)
+      except StaleKeyGenerationError:pass
+      state=c.execute('SELECT key_generation,last_timecode FROM totp_consumption').fetchone()
+      print('active_before',7,'presented',presented,'result',observed,'state_after',state)
+>     assert observed is None and state==(7,40),'Consume must confirm active generation, not authorize generation replacement'
+E     AssertionError: Consume must confirm active generation, not authorize generation replacement
+E     assert (41 is None)
+
+..\test_totp_consumption_review.py:72: AssertionError
+_____ test_not_activated_generation_cannot_replace_active_generation[100] _____
+
+tmp_path = WindowsPath('D:/hc/userFeedback/cache/tmp/pytest-of-Administrator/pytest-79/test_not_activated_generation_1')
+presented = 100
+
+    @pytest.mark.parametrize('presented',[8,100])
+    def test_not_activated_generation_cannot_replace_active_generation(tmp_path,presented):
+     c,s=make_store(tmp_path/'state.db');seed(c)
+     try:
+      observed=None
+      try:observed=consume(s,generation=presented)
+      except StaleKeyGenerationError:pass
+      state=c.execute('SELECT key_generation,last_timecode FROM totp_consumption').fetchone()
+      print('active_before',7,'presented',presented,'result',observed,'state_after',state)
+>     assert observed is None and state==(7,40),'Consume must confirm active generation, not authorize generation replacement'
+E     AssertionError: Consume must confirm active generation, not authorize generation replacement
+E     assert (41 is None)
+
+..\test_totp_consumption_review.py:72: AssertionError
+=========================== short test summary info ===========================
+FAILED ..\test_totp_consumption_review.py::test_not_activated_generation_cannot_replace_active_generation[8]
+FAILED ..\test_totp_consumption_review.py::test_not_activated_generation_cannot_replace_active_generation[100]
+2 failed, 20 passed in 0.55s

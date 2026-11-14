@@ -1,0 +1,173 @@
+{
+  "time": "2026-11-14T21:33:57+08:00",
+  "task_id": "uf-20261114-new10-totp-atomic-redemption",
+  "run_id": "uf-20261114-new10-totp-atomic-redemption-retry-1",
+  "uid": 1387,
+  "workspace": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\engineering\\totp-after-504-20261114-r1\\clean-source",
+  "artifact_directory": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\frozen-artifact",
+  "git_head_after_model": "cc156832fa9f3d5af7fb9e4e6b86b29dfc5b69f1",
+  "initial_sha": "cc156832fa9f3d5af7fb9e4e6b86b29dfc5b69f1",
+  "trajectory_file": "D:\\hc\\userFeedback\\cache\\runs\\uf-20261114-new10-totp-atomic-redemption-retry-1\\frozen\\trajectory-original.jsonl",
+  "trajectory_sha256": "14d12d2fa08fd8c7d793f15e0427de80c060beef70e3974a1ef081974d9b09f8",
+  "session_ids": [
+    "e4a3d7ce-ac03-4a75-aa60-c816b31ce5c3"
+  ],
+  "prompt_ids": [
+    "6a9dbb0c-b2ad-43cc-a23b-aa8d98088014"
+  ],
+  "user_turns": 1,
+  "prompt_sha256": "ad147b62427ebe820b8a351d6dffebc15e51b92b777a4c6f8a6dfaad8e115a4d",
+  "frozen_files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "sha256": "f3508eb6db97198c7bf8427683b2f634188ea9f603fcaf5cbe95833961c0f8e1",
+      "bytes": 63
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "aca57af0f0426a7a29824be39db347ca8ed75fe1d62d267e611c711b03d79698",
+      "bytes": 798
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "1600c0ba355854acb68528de60d4307bd12c028bb620c65311dfd46a50da1be2",
+      "bytes": 490
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b5ee31ff4682a9f51f409bfa4c27f8c735693438a077aeb4597288b909e4a855",
+      "bytes": 565
+    },
+    {
+      "path": "Changes.rst",
+      "sha256": "07c6da481014cb531f2eb899e3b96364fbb84bdb33cb998d34b775aea98be347",
+      "bytes": 5716
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "795885123341458172aad6ebfab31b071cc7b40524929e6901662d5dbbf57ea3",
+      "bytes": 1174
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "b117a59a8edd33e6f389d9458c489df71dc01bbe90e631d5a16078c4ffc4489e",
+      "bytes": 114
+    },
+    {
+      "path": "Makefile",
+      "sha256": "c52aadd4fa49476d03b929f3942f22e53998278303f699009aeea7091c2f18bc",
+      "bytes": 605
+    },
+    {
+      "path": "README.rst",
+      "sha256": "772da571a92d4e52164fa7bd0070c352ad14ebceb0652cc1c02bafccfdfcb49e",
+      "bytes": 11093
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "1be6193d7b39e2952dbea7905d9afd347d579b8d4677e02362f1cf6f40deb7f5",
+      "bytes": 698
+    },
+    {
+      "path": "common.mk",
+      "sha256": "303f2215814c809b964f6c7ea398cb730395149ad1423f8bf792da0c17ffa86f",
+      "bytes": 1981
+    },
+    {
+      "path": "docs/changelog.rst",
+      "sha256": "48dc5cb6d9d293f812f49f99c3947ab4b35f4a58c6d113467bef080a8a022af1",
+      "bytes": 56
+    },
+    {
+      "path": "docs/conf.py",
+      "sha256": "1ff78c00ac4cba5a747cdc5704eaba67eb88ccbbaae04a1b37c5eaa32b82d579",
+      "bytes": 1050
+    },
+    {
+      "path": "docs/index.rst",
+      "sha256": "58efc70ceafdbeb3ee82869699bf18abeb5ee5ef86b55f2f6e0fceb3371e853a",
+      "bytes": 441
+    },
+    {
+      "path": "docs/toc.html",
+      "sha256": "ae18140824f7c77ca8262eb6ba97c484ed7474f1da03cd4f5e5bfb6f6b4d3c29",
+      "bytes": 8
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "8879f5a75c8d93c2129aa5fd30fdeb75bf8f732b7d1aaee87a362dfed1b0127d",
+      "bytes": 1684
+    },
+    {
+      "path": "src/pyotp/__init__.py",
+      "sha256": "e48e2948ead8981a13331ac14f43bad11623dff78bb5c409bc7160fbb0c40c11",
+      "bytes": 4831
+    },
+    {
+      "path": "src/pyotp/compat.py",
+      "sha256": "001d889ab404e6d03da5454658a94a643535879aa96472860540a9691889deb6",
+      "bytes": 217
+    },
+    {
+      "path": "src/pyotp/contrib/__init__.py",
+      "sha256": "d758f5092d3d6ababfd38c2959d363241705252b5b318239d0728ca250d67225",
+      "bytes": 93
+    },
+    {
+      "path": "src/pyotp/contrib/sqlite_store.py",
+      "sha256": "ffe947db7799d12bca5d9195b96460be15ce5da55200291f808e72d9aa53cc16",
+      "bytes": 7688
+    },
+    {
+      "path": "src/pyotp/contrib/steam.py",
+      "sha256": "9de49bac08d3757e2a6f88aa3a6995d3483ce78e46948910c4815eb099faf7d3",
+      "bytes": 1292
+    },
+    {
+      "path": "src/pyotp/hotp.py",
+      "sha256": "144d3b5ccf9e59350179d15df0dc1005d2ac1e186595dc2806484aa88b3d8f3a",
+      "bytes": 2837
+    },
+    {
+      "path": "src/pyotp/otp.py",
+      "sha256": "4b975adc35a7a9e1fa63be21307ed38b6ad24167b1a86cee9ee75e6fd6af917a",
+      "bytes": 2531
+    },
+    {
+      "path": "src/pyotp/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/pyotp/replay.py",
+      "sha256": "91a5f43944314c331d3061949aab338ae10a1e292b8bbfd3ddcd33ace234a517",
+      "bytes": 11399
+    },
+    {
+      "path": "src/pyotp/totp.py",
+      "sha256": "75d1e6901d4a1e856dd0df30b89404d879c9e3af681f6e20e2cf205ed8bb5e39",
+      "bytes": 5599
+    },
+    {
+      "path": "src/pyotp/utils.py",
+      "sha256": "23d6ff62ce432de97a3605e21c6abf4c4ff4499d3589df23f824c0c67894d50b",
+      "bytes": 3281
+    },
+    {
+      "path": "test/__init__.py",
+      "sha256": "65d468abfcebc168bd2d5a083680818a08ecb029700982b9d0e63f222aea07b9",
+      "bytes": 26
+    },
+    {
+      "path": "test/test_core.py",
+      "sha256": "35ff6a1168a136170c1dd1ea5d997b68bcca857d128656e9e56ecb432fbc9fb6",
+      "bytes": 22979
+    },
+    {
+      "path": "test/test_replay.py",
+      "sha256": "1d972e572727840f9c02333d72cdb8d4487c3d2505c1685ce69114fcba4b6f5b",
+      "bytes": 30718
+    }
+  ],
+  "no_postrun_product_changes": true
+}

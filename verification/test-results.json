@@ -1,0 +1,22 @@
+{
+  "independent_consumption": {
+    "passed": 20,
+    "failed": 2,
+    "same_root_cause": "generation comparison automatically activates larger value"
+  },
+  "model_added_replay": {
+    "passed": 40,
+    "failed": 0
+  },
+  "upstream_core": {
+    "passed": 27,
+    "failed": 1
+  },
+  "initial_core_baseline": {
+    "passed": 27,
+    "failed": 1,
+    "same_preexisting_windows_failure": true,
+    "excluded_from_score": true
+  },
+  "not_summed": true
+}

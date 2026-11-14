@@ -1,0 +1,42 @@
+.....F......................                                             [100%]
+================================== FAILURES ===================================
+_____________ TOTPExampleValuesFromTheRFC.test_input_before_epoch _____________
+
+self = <test.test_core.TOTPExampleValuesFromTheRFC testMethod=test_input_before_epoch>
+
+    def test_input_before_epoch(self):
+        totp = pyotp.TOTP("GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ")
+        # -1 and -29.5 round down to 0 (epoch)
+>       self.assertEqual(totp.at(-1), "755224")
+                         ^^^^^^^^^^^
+
+test\test_core.py:184: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <pyotp.totp.TOTP object at 0x00000216388AA710>, for_time = -1
+counter_offset = 0
+
+    def at(self, for_time: Union[int, datetime.datetime], counter_offset: int = 0) -> str:
+        """
+        Accepts either a Unix timestamp or a datetime object.
+    
+        To get the time until the next timecode change (seconds until the current OTP expires), use this instead:
+    
+        .. code:: python
+    
+            totp = pyotp.TOTP(...)
+            time_remaining = totp.interval - datetime.datetime.now().timestamp() % totp.interval
+    
+        :param for_time: the time to generate an OTP for
+        :param counter_offset: the amount of ticks to add to the time counter
+        :returns: OTP value
+        """
+        if not isinstance(for_time, datetime.datetime):
+>           for_time = datetime.datetime.fromtimestamp(int(for_time))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           OSError: [Errno 22] Invalid argument
+
+src\pyotp\totp.py:57: OSError
+=========================== short test summary info ===========================
+FAILED test/test_core.py::TOTPExampleValuesFromTheRFC::test_input_before_epoch
+1 failed, 27 passed in 0.28s

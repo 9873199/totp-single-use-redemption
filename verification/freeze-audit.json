@@ -1,0 +1,29 @@
+{
+  "time": "2026-11-14T21:34:23+08:00",
+  "uid": 1387,
+  "status": "PASS",
+  "single_native_trace": "D:\\hc\\userFeedback\\cache\\runs\\uf-20261114-new10-totp-atomic-redemption-retry-1\\frozen\\trajectory-original.jsonl",
+  "trace_sha256": "14d12d2fa08fd8c7d793f15e0427de80c060beef70e3974a1ef081974d9b09f8",
+  "session_id": "e4a3d7ce-ac03-4a75-aa60-c816b31ce5c3",
+  "prompt_id": "6a9dbb0c-b2ad-43cc-a23b-aa8d98088014",
+  "exact_single_prompt": true,
+  "native_models": [
+    "auto_model/urm"
+  ],
+  "native_efforts": [
+    "high"
+  ],
+  "three_explicit_high_settings": true,
+  "native_success": true,
+  "frozen_files_unchanged": true,
+  "private_reasoning_excluded": true,
+  "event_counts": {
+    "queue-operation": 2,
+    "user": 126,
+    "attachment": 117,
+    "atis-latch": 31,
+    "assistant": 300,
+    "last-prompt": 31,
+    "system": 4
+  }
+}

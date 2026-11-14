@@ -1,0 +1,76 @@
+{
+  "uid": 1387,
+  "run_id": "uf-20261114-new10-totp-atomic-redemption-retry-1",
+  "reviewed": true,
+  "reviewer": "Codex primary AI-assisted atomic-store boundary reviewer",
+  "frozen_trace_sha256": "14d12d2fa08fd8c7d793f15e0427de80c060beef70e3974a1ef081974d9b09f8",
+  "revision": "totp-consumption-r1",
+  "product_modules": [
+    "pyotp",
+    "pyotp.replay",
+    "pyotp.contrib.sqlite_store"
+  ],
+  "support_files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\acceptance-preparation\\test_totp_consumption_review.py",
+      "path": "test_totp_consumption_review.py",
+      "sha256": "d67d7742e1f79a9513e2e9c4b877dd03693e07764dfd67a3545d63c3f998836f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\acceptance-preparation\\totp_oracle.py",
+      "path": "totp_oracle.py",
+      "sha256": "4121b5d15661957f87b049745d109bacac898f9ec3e05d5799df5b6138cdfb2c"
+    }
+  ],
+  "commands": [
+    {
+      "name": "independent-totp-consumption",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-s",
+        "{verification}/test_totp_consumption_review.py",
+        "-o",
+        "addopts=",
+        "-o",
+        "cache_dir={verification}/pytest-cache"
+      ],
+      "timeout": 300
+    },
+    {
+      "name": "model-replay-tests",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "test/test_replay.py",
+        "-o",
+        "addopts=",
+        "-o",
+        "cache_dir={verification}/pytest-cache"
+      ],
+      "timeout": 300
+    },
+    {
+      "name": "upstream-core-regression",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "test/test_core.py",
+        "-o",
+        "addopts=",
+        "-o",
+        "cache_dir={verification}/pytest-cache"
+      ],
+      "timeout": 300
+    }
+  ]
+}

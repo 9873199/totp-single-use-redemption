@@ -1,0 +1,37 @@
+{
+  "time": "2026-11-14T21:43:50+08:00",
+  "uid": 1387,
+  "container": false,
+  "actual": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\env\\Scripts\\python.exe",
+    "modules": {
+      "pyotp": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\replay-source\\src\\pyotp\\__init__.py",
+      "pyotp.replay": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\replay-source\\src\\pyotp\\replay.py",
+      "pyotp.contrib.sqlite_store": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\replay-source\\src\\pyotp\\contrib\\sqlite_store.py"
+    }
+  },
+  "dependency_lock": "ast_serialize==0.13.1\ncolorama==0.4.6\ncoverage==7.17.3\ndocutils==0.23\nfreezegun==1.5.5\niniconfig==2.3.1\nlibrt==0.16.0\nmypy==2.4.1\nmypy_extensions==1.2.0\npackaging==26.3\npathspec==1.1.1\npluggy==1.7.0\nPygments==2.21.0\npytest==9.2.0\npython-dateutil==4.0.0\nruff==0.17.5\ntyping_extensions==4.16.0\ntzdata==2026.6\n",
+  "dependency_environment": "Reused the task dependency environment; exact pip freeze retained",
+  "frozen_source_import_verified": true,
+  "external_runtime_services": [],
+  "environment_limits": [
+    "SQLite is a local file adapter; real database transaction rather than Python lock.",
+    "Preexisting Windows datetime.fromtimestamp(-1) core failure reproduced in exact initial commit, not deducted."
+  ],
+  "task_preparation": {
+    "time": "2026-11-14T16:26:27+08:00",
+    "status": "ENV_READY",
+    "python": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\env\\Scripts\\python.exe",
+    "source_path": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\sources\\pyotp\\src;D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\sources\\pyotp",
+    "environment_directory": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\environment-r2",
+    "source": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\sources\\pyotp",
+    "dependencies_lock": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\environment-r2\\dependencies-lock.stdout.log",
+    "external_services": false,
+    "containerized": false,
+    "clean": true,
+    "baseline_evidence": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\environment-r2\\baseline.json",
+    "upstream_scope_note": "Unmodified upstream negative timestamp test raises Windows OSError before product logic; excluded exactly1 original case. New API epoch semantics remain acceptance requirement.",
+    "earlier_attempts_retained": true
+  }
+}

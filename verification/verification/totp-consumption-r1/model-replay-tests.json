@@ -1,0 +1,19 @@
+{
+  "time": "2026-11-14T21:36:38+08:00",
+  "argv": [
+    "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\tasks\\pyotp\\env\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "test/test_replay.py",
+    "-o",
+    "addopts=",
+    "-o",
+    "cache_dir=D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1/pytest-cache"
+  ],
+  "cwd": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\replay-source",
+  "exit_code": 0,
+  "stdout_log": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\model-replay-tests.stdout.log",
+  "stderr_log": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\evaluation\\uf-20261114-new10-totp-atomic-redemption-retry-1\\verification\\totp-consumption-r1\\model-replay-tests.stderr.log"
+}

@@ -1,0 +1,71 @@
+{
+  "requirements": [
+    {
+      "requirement": "External atomic store after cryptographic match; no account dictionary or in-process lock guarantee",
+      "source": "src/pyotp/replay.py consume_totp and TOTPConsumptionStore",
+      "result": "Invalid input makes0 store calls; matched input exactly1; constant-time utils path observed; domain error codes distinct; storage failures never return success."
+    },
+    {
+      "requirement": "Highest matching counter once,epoch0/negative window handling,rollback/replay",
+      "source": "replay.py _match_highest_timecode",
+      "result": "Independent HMAC collision and0/1/2/41 counters pass. Duplicate matches select maximum and replay never retries lower."
+    },
+    {
+      "requirement": "Confirm supplied generation is still active during atomic consume",
+      "source": "sqlite_store.py115–150 and replay.py storage contract",
+      "result": "Stored active7 with no activation: incoming8 or100 succeeds and overwrites active generation. Explicit preactivation to8 then counter0 works; older generation rejects. Larger incoming value is wrongly treated as authorization to activate."
+    },
+    {
+      "requirement": "Two actual SQLite connections,commit failure,different accounts,no stored secrets",
+      "source": "contrib/sqlite_store.py BEGIN IMMEDIATE/commit; reviewer GatedConnection",
+      "result": "Deterministic precommit blocked contender never succeeds; exactly one committed consume; commit failure rolls back; account isolation and schema-only state pass."
+    },
+    {
+      "requirement": "Existing verify/verify_and_get_timecode compatibility",
+      "source": "src/pyotp/totp.py and initial archive",
+      "result": "Independent repeated stateless verification and timecode unchanged; upstream27pass and same initial1platform failure. Raw hashes retained; normalized core content identical."
+    }
+  ],
+  "process_issues": [
+    {
+      "native_lines": [
+        73,
+        123,
+        135,
+        140,
+        149
+      ],
+      "file": "test/test_replay.py",
+      "lines": [
+        506,
+        510
+      ],
+      "details": "Model implements monotonic rotation in SQLite adapter and tests new generation acceptance simply by passing1 after0; no separate active-generation registration. This embeds the mistaken generation contract rather than testing unactivated-generation rejection."
+    }
+  ],
+  "product_issues": [
+    {
+      "file": "src/pyotp/contrib/sqlite_store.py",
+      "lines": [
+        56,
+        115,
+        139,
+        143,
+        150
+      ],
+      "function": "SQLiteTOTPStore.consume",
+      "trigger": "DB row(review,7,40); cryptographic match at41 presented with generation8 or100 without activation",
+      "result": "Returns41, commits row(8,41)/(100,41), violating active-generation confirmation. No claim of remote account takeover; defect is authorization/state contract."
+    }
+  ],
+  "independent_scopes": [
+    "totp-consumption-r1",
+    "totp-initial-baseline-r1"
+  ],
+  "source_diversity_review": "D:\\hc\\userFeedback\\cache\\security-ten-20261114-r1\\semantic-review.json",
+  "time": "2026-11-14T21:43:50+08:00",
+  "uid": 1387,
+  "frozen_commit": "95d9f199c324a30dadaf53741c1a12239b4e8b07",
+  "native_trace_sha256": "14d12d2fa08fd8c7d793f15e0427de80c060beef70e3974a1ef081974d9b09f8",
+  "no_model_source_changes_after_freeze": true
+}

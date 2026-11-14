@@ -1,0 +1,31 @@
+实现完成。下面是这次改动的完整说明。
+
+## 新增的安全边界
+
+**核心入口 `pyotp.consume_totp`（`src/pyotp/replay.py`）** — 单次消费 TOTP 的库接口：
+
+```python
+pyotp.consume_totp(totp, otp, account_id, key_generation, store, for_time=None, valid_window=0) -> int
+```
+
+- **存储由调用方提供**：`TOTPConsumptionStore` 是一个 `@runtime_checkable` 的 `Protocol`，只有一个原子方法 `consume(account_id, key_generation, timecode)`。库里不保存任何账户字典，也没有任何 Python 锁（锁无法跨进程/跨主机，文档中明确说明不可接受）。
+- **先密码学匹配，后碰存储**：OTP 不匹配时直接抛 `InvalidOTPError`，存储完全不被调用（用一个"被调用即失败"的 `ExplodingStore` 测死了这条路径）。
+- **四类可区分的结果**：机器可读错误码 `TOTPError` 枚举 + 对应异常类 —— `InvalidOTPError`（验证码不对）、`ReplayedOTPError`（重放）、`StaleKeyGenerationError`（密钥代次过期，附 `stored_generation`）、`TOTPStorageError`（存储故障）。存储抛出的任何非领域异常都会被包成 `TOTPStorageError`，**存储失败永远不可能返回成功**。
+- **窗口碰撞取最大计数器、只消费一次**：`_match_highest_timecode` 从最高 timecode 向低扫描，命中即返回，存储只调用一次；不会退而求其次去试旧计数器。用确定性夹具验证：secret `IRLPMGD2P5MDHFBUD3WESJGNJTQT3RHL` 在 timecode 5 和 6 恰好都生成 `703699`，窗口含两者时选 6 且只产生一次 store 调用。
+- **Unix 起点边界**：负计数器 `continue` 跳过；用 `None`（不是 `False`）表示未命中，timecode `0` 作为有效 `int` 返回，并有专门测试确认 `0 is not False`。
+- 沿用 `utils.strings_equal` 恒定时间比较（有 spy 测试）；模块内不写任何日志，测试捕获日志断言不含 secret/验证码。`verify` 与 `verify_and_get_timecode` 一行未改，且有测试确认重复 `verify` 仍成功、语义不变。
+
+## SQLite 参考适配器（`src/pyotp/contrib/sqlite_store.py`）
+
+`SQLiteTOTPStore` 展示真实事务边界，表只有 `account_id / key_generation / last_timecode` 三列，**不存明文密钥**（测试断言表结构与行内容）。`consume` 在单个 `BEGIN IMMEDIATE` 事务里：代次更大→`StaleKeyGenerationError`；代次相同且 `last_timecode >= timecode`→`ReplayedOTPError`；代次相同且计数器更新→带 `WHERE last_timecode < ?` 的条件 `UPDATE`，`rowcount != 1` 即判定输了竞争；代次更小→ guarded 旋转 UPDATE 并重置代次。任何 `sqlite3.Error` 回滚并转成 `TOTPStorageError`。
+
+## 测试（`test/test_replay.py`，40 个用例，两个新模块 100% 覆盖）
+
+要求的场景全部覆盖：两条**独立连接的确定性竞争**（A 持有写锁未提交时 B 得到存储故障而非成功，提交后 B 重试得重放；外加 10 轮真实双线程，每轮恰好一次成功）、时钟回退、密钥轮换与旧代次拒绝、窗口碰撞选最大、提交失败、不同账户互不影响，以及负计数器/ timecode 0、存储异常包装、参数校验等。
+
+## 两点工程说明
+
+- 原 `test.py` 移到了 `test/test_core.py` 并新建 `test/` 包。否则一旦存在 `test/` 目录，`make test` 用的 `unittest discover -s test` 会只发现新测试、静默丢掉原有 28 个。现在两种 discovery 方式都跑全部 68 个测试。
+- 当前唯一失败 `test_input_before_epoch` 是**改动前就存在的 Windows 平台问题**（`datetime.fromtimestamp(-1)` 在本机抛 `OSError`），在干净的 cc15683 基线上同样失败；其余全绿。mypy 干净，`ruff format` 干净，新代码未引入任何基线之外的 lint 规则（仅命中全库既有的 FA100）。
+
+文档方面更新了 README（含完整 try/except 集成示例）、`docs/index.rst` 的 automodule、`Changes.rst` 和 `MANIFEST.in`。
